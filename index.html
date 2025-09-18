@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GadoGadoGarage - Bengkel Motor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff6600, #222);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: #fff;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background: #ff6600;
+      color: #fff;
+    }
+
+    .hero {
+      position: relative;
+      background: url("lexyy.JPEG") center/cover no-repeat;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero h2 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero a {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      padding: 12px 25px;
+      background: #ff6600;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    .hero a:hover {
+      background: #e05500;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2em;
+      color: #222;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #ff6600;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GadoGadoGarage</h1>
+    <p>Bengkel Motor - Servis, Modifikasi & Balap</p>
+  </header>
+
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Performa Motor Maksimal, Gaya Balap Total</h2>
+    <!-- Ganti nomor WhatsApp di bawah ini -->
+    <a href="https://wa.me/6289655541879" target="_blank">Hubungi Kami via WhatsApp</a>
+  </div>
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p style="text-align: center;">
+      GadoGadoGarage adalah bengkel motor yang fokus pada servis, perawatan, 
+      serta modifikasi motor harian dan balap. Dengan mekanik berpengalaman 
+      dan peralatan modern, kami siap menjadikan motor Anda bertenaga 
+      dan bergaya.
+    </p>
+  </section>
+
+  <section id="layanan">
+    <h2>Layanan Kami</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Servis Rutin</h3>
+        <p>Pemeriksaan dan perawatan berkala agar motor tetap prima setiap hari.</p>
+      </div>
+      <div class="card">
+        <h3>Perbaikan Mesin</h3>
+        <p>Solusi untuk masalah mesin motor, dari ringan hingga berat.</p>
+      </div>
+      <div class="card">
+        <h3>Modifikasi Balap</h3>
+        <p>Upgrade performa motor untuk kebutuhan balap atau sekadar tampil beda.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Tampilan</h3>
+        <p>Desain body dan cat sesuai keinginan agar motor lebih keren.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <!-- Ganti alamat, telepon, dan email di bawah ini -->
+    <p style="text-align: center;">📍 Alamat: Jl. Perdagangan1 No.17, Jakarta Selatan</p>
+    <p style="text-align: center;">📞 Telepon: 0895-5554-1879</p>
+    <p style="text-align: center;">✉️ Instagram: @gadogadogarage</p>
+     <!-- Google Maps Embed -->
+    <div class="map-container">
+      <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.890106774991!2d106.76252797453195!3d-6.27817616145477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f15cc65cd9f1%3A0x7e6ba18ff97376f6!2sGado-Gado%20GARAGE%20(G3)!5e0!3m2!1sen!2sid!4v1758167644221!5m2!1sen!2sid" 
+  width="100%" 
+  height="400" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+      </iframe>
+    </div>
+  
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GadoGadoGarage. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
